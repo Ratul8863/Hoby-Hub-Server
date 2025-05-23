@@ -93,17 +93,17 @@ app.get('/users', async (req, res) => {
 //       res.send(user);
 //     });
 
-// app.put('/groups/:id', async (req, res) => {
-//       const id = req.params.id;
-//       const filter = { _id: new ObjectId(id) };
-//       const updatedgroup =req.body;
-//       const updatedDoc = {
-//         $set: updatedgroup
-//       };
-//       const options = { upsert: true };
-//       const result = await newhoby.updateOne(filter, updatedDoc, options);
-//       res.send(result);
-//     });
+app.put('/groups/:id', async (req, res) => {
+      const id = req.params.id;
+      const filter = { _id: new ObjectId(id) };
+      const updatedgroup =req.body;
+      const updatedDoc = {
+        $set: updatedgroup
+      };
+      const options = { upsert: true };
+      const result = await newhoby.updateOne(filter, updatedDoc, options);
+      res.send(result);
+    });
     
 
 app.delete('/groups/:id', async(req, res)=>{
