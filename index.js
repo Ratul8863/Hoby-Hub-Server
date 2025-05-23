@@ -68,14 +68,14 @@ app.post('/groups', async(req,res)=>{
 
 //user
 
-// app.post('/users', async(req,res)=>{ 
-//     console.log('data' , req.body ) 
-//     const newuser = req.body; 
-//      const result = await newusers.insertOne(newuser)
-//     // newuser.id=user.length + 1; 
-//     res.send(result) 
+app.post('/users', async(req,res)=>{ 
+    console.log('data' , req.body ) 
+    const newuser = req.body; 
+     const result = await newusers.insertOne(newuser)
+    // newuser.id=user.length + 1; 
+    res.send(result) 
 
-// }) 
+}) 
 app.get('/users', async (req, res) => { 
 
 //  const cursor = newcoffee.find();
