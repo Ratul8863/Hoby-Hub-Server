@@ -45,15 +45,15 @@ const newhoby = client.db('hobyhubDB').collection('groups');
 const newusers = client.db('hobyDB').collection('users');
 
 
-// app.get('/groups', async (req, res) => { 
+app.get('/groups', async (req, res) => { 
 
-// //  const cursor = newcoffee.find();
-// //  const result =await cursor.toArray();
-// //OR
-//  const result = await newhoby.find().toArray();
-//  res.send(result);
+//  const cursor = newcoffee.find();
+//  const result =await cursor.toArray();
+//OR
+ const result = await newhoby.find().toArray();
+ res.send(result);
 
-// }); 
+}); 
 
 
 app.post('/groups', async(req,res)=>{ 
