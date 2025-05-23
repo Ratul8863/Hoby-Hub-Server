@@ -86,12 +86,12 @@ app.get('/users', async (req, res) => {
 
 }); 
 
-// app.get('/groups/:id', async (req, res) => {
-//       const id = req.params.id;
-//       const query = { _id: new ObjectId(id) };
-//       const user = await newhoby.findOne(query);
-//       res.send(user);
-//     });
+app.get('/groups/:id', async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const user = await newhoby.findOne(query);
+      res.send(user);
+    });
 
 app.put('/groups/:id', async (req, res) => {
       const id = req.params.id;
