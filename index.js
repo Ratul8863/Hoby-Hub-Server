@@ -106,13 +106,13 @@ app.get('/users', async (req, res) => {
 //     });
     
 
-// app.delete('/groups/:id', async(req, res)=>{
-//     const id = req.params.id;
-//     console.log("to be deleted",id);
-//     const query = {_id : new ObjectId(id)} ;
-//     const result = await newhoby.deleteOne(query);
-//     res.send(result);
-// })
+app.delete('/groups/:id', async(req, res)=>{
+    const id = req.params.id;
+    console.log("to be deleted",id);
+    const query = {_id : new ObjectId(id)} ;
+    const result = await newhoby.deleteOne(query);
+    res.send(result);
+})
 
   } finally {
     // Ensures that the client will close when you finish/error
