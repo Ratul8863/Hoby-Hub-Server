@@ -34,21 +34,16 @@ This is the **backend server** for the HobbyHub platform – a system where user
 
 ---
 
-## 📁 Folder Structure
 
-
-
-
--Step 1: Clone the server repository
-
+- Step 1: Clone the server repository
+--git clone https://github.com/yourusername/hobbyhub-server.git
 - Step 2: Navigate into the project folder
+--cd hobbyhub-server
 
-
-
-# Step 2: Install dependencies
+- Step 2: Install dependencies
 npm install
 
-# Step 3: Create a `.env` file with the following variables
+- Step 3: Create a `.env` file with the following variables
 PORT=5000
 DB_URI=your_mongodb_uri
 ACCESS_TOKEN_SECRET=your_jwt_secret
