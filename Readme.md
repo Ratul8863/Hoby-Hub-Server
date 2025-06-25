@@ -1,4 +1,4 @@
-#🛠️ HobbyHub Server – Backend API for Local Hobby Groups
+"# 🛠️ HobbyHub Server – Backend API for Local Hobby Groups
 
 This is the **backend server** for the HobbyHub platform – a system where users can create, manage, and join hobby-based groups such as book clubs, painting circles, or hiking crews. Built with **Express.js** and **MongoDB**, the API handles group operations, user authentication, and protected route handling using **JWT tokens and cookies**.
 
@@ -6,18 +6,18 @@ This is the **backend server** for the HobbyHub platform – a system where user
 
 ## 🌐 Live Server
 
-👉 [https://hobbyhub-server.vercel.app](https://hobbyhub-server.vercel.app)
+👉 [https://hobbyhub-server.vercel.app]
 
 ---
 
 ## 📦 Features
 
 - 🧾 RESTful API to manage hobby groups
-- 🔐 JWT-based authentication & protected routes
+- 🔐 JWT-based Authentication
 - 🧑‍💻 User data validation with middleware
 - 📤 Create, update, delete, and retrieve groups
-- 🍪 Secure token management via HttpOnly cookies
-- 🌐 Configured CORS for frontend communication
+- 🔒 Secure cookie-based token system
+- 🌐 CORS configured for frontend access
 
 ---
 
@@ -30,12 +30,6 @@ This is the **backend server** for the HobbyHub platform – a system where user
 ![Cookie Parser](https://img.shields.io/badge/Cookie_Parser-ffc107?style=for-the-badge)
 ![dotenv](https://img.shields.io/badge/dotenv-000000?style=for-the-badge)
 ![CORS](https://img.shields.io/badge/CORS-4B32C3?style=for-the-badge)
-
----
-
-## 📁 Folder Structure
-
-
 
 
 ---
@@ -76,4 +70,6 @@ dotenv
 mongoose
 jsonwebtoken
 cookie-parser
+"
 
+fix
